@@ -1,0 +1,13 @@
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding-bottom: 15px;
+}
+
+.masonry img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}

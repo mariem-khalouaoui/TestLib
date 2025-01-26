@@ -1,0 +1,13 @@
+<div style="display: flex; width: 100%;justify-content: space-around;padding: 35px;">
+  <div>
+    <img style="width: 45px;height: 45px;object-fit: contain;" src="\assets\images\camera.png" alt="">
+  </div>
+  <div style="display: flex; gap: 5px;align-items: center;">
+    <nav-button *ngFor="let button of buttonList; let i = index" [selected]="button.selected"
+      (click)="onButtonClicked(i)" [description]="button.description"></nav-button>
+  </div>
+
+  <div style="width: 100px;">
+    <action-button [description]="actionButtonDescription" (click)="onActionButtonClick()"></action-button>
+  </div>
+</div>

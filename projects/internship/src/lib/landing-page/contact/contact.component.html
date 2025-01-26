@@ -1,0 +1,194 @@
+<div
+  style="
+    height: calc(100vh - 120px);
+    width: 99vw;
+    background-color: #11204d;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 50px auto;
+  "
+>
+  <!-- Header Section -->
+  <div>
+    <div
+      class="header-container"
+      style="font-size: 24px; color: white; font-weight: bold"
+    >
+      Say Hello
+    </div>
+    <div
+      class="subheader-container"
+      style="font-size: 16px; color: white; margin-top: 8px"
+    >
+      Let’s Connect and Create Something Amazing
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div
+    class="contact-container"
+    style="
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    "
+  >
+    <!-- Contact Form -->
+    <div
+      class="contact-form"
+      style="
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 350px;
+      "
+    >
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="1b55f272-454b-4556-9f4e-a2ac63226c97"
+        />
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          style="
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          "
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          style="
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          "
+        />
+
+        <input
+          type="text"
+          name="subject"
+          placeholder="Subject"
+          required
+          style="
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          "
+        />
+
+        <textarea
+          name="message"
+          placeholder="Message"
+          required
+          style="
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            height: 100px;
+          "
+        ></textarea>
+
+        <button
+          type="submit"
+          style="
+            background-color: #6138bd;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+          "
+        >
+          Send Now
+        </button>
+      </form>
+    </div>
+
+    <!-- Contact Details -->
+    <div
+      class="contact-details"
+      style="
+        background-color: #1a2a4f;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 350px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      "
+    >
+      <!-- Location -->
+      <div style="margin-bottom: 16px">
+        <div style="display: flex; align-items: center; gap: 8px">
+          <i
+            class="bi bi-geo-alt-fill"
+            style="color: #6138bd; font-size: 20px"
+          ></i>
+          <span style="font-weight: bold">My Location</span>
+        </div>
+        <p style="margin-left: 28px; opacity: 0.8">
+          PO Box 16122, Collins, Victoria 3000, Australia
+        </p>
+      </div>
+
+      <!-- Phone -->
+      <div style="margin-bottom: 16px">
+        <div style="display: flex; align-items: center; gap: 8px">
+          <i
+            class="bi bi-phone-fill"
+            style="color: #6138bd; font-size: 20px"
+          ></i>
+          <span style="font-weight: bold">Give a Call</span>
+        </div>
+        <p style="margin-left: 28px; opacity: 0.8">+90 1234 5678</p>
+      </div>
+
+      <!-- Email -->
+      <div style="margin-bottom: 16px">
+        <div style="display: flex; align-items: center; gap: 8px">
+          <i
+            class="bi bi-envelope-fill"
+            style="color: #6138bd; font-size: 20px"
+          ></i>
+          <span style="font-weight: bold">Email Me</span>
+        </div>
+        <p style="margin-left: 28px; opacity: 0.8">sayhello@example.com</p>
+      </div>
+
+      <!-- Social Media -->
+      <div style="display: flex; gap: 5px">
+        <h4 class="font-semibold flex-shrink-0">• Follow Me on</h4>
+
+        <div style="display: flex; gap: 5px">
+          <span>---------------------</span>
+          <i class="bi bi-instagram"> </i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

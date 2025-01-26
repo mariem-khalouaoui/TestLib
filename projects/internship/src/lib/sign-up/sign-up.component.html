@@ -1,0 +1,136 @@
+<div
+  style="
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  "
+>
+  <app-header
+    [actionButtonDescription]="'Log in'"
+    (actionButtonClicked)="navigateToLogin()"
+  ></app-header>
+
+  <div
+    style="
+      display: flex;
+      font-size: medium;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    "
+  >
+    <span style="font-weight: bold">Sign up</span>
+
+    <div style="width: 50vw; padding: 30px">
+      <span style="font-size: 15px; padding-bottom: 10px">Email address:</span>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Email address"
+          aria-label="Email address"
+          aria-describedby="basic-addon1"
+          [(ngModel)]="email"
+        />
+      </div>
+      <span style="font-size: 15px; padding-bottom: 10px">Password:</span>
+      <div class="mb-3 position-relative">
+        <div class="input-group">
+          <input
+            [type]="passwordFieldType"
+            class="form-control"
+            id="password"
+            placeholder="Enter password"
+            [(ngModel)]="password"
+          />
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            (click)="togglePasswordVisibility()"
+          >
+            <i
+              [ngClass]="
+                passwordFieldType === 'password' ? 'bi-eye-slash' : 'bi-eye'
+              "
+            ></i>
+          </button>
+        </div>
+      </div>
+      <span style="font-size: 15px; padding-bottom: 10px"
+        >Confirm Password:</span
+      >
+      <div class="mb-3 position-relative">
+        <div class="input-group">
+          <input
+            [type]="confirmPasswordFieldType"
+            class="form-control"
+            id="password"
+            placeholder="Enter password"
+            [(ngModel)]="confirmPassword"
+          />
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            (click)="toggleConfirmPasswordVisibility()"
+          >
+            <i
+              [ngClass]="
+                confirmPasswordFieldType === 'password'
+                  ? 'bi-eye-slash'
+                  : 'bi-eye'
+              "
+            ></i>
+          </button>
+        </div>
+      </div>
+
+      <div style="padding-top: 25px">
+        <action-button
+          [description]="'Create Account'"
+          (click)="submit()"
+        ></action-button>
+      </div>
+      <div
+        style="
+          gap: 5px;
+          margin-top: 5px;
+          border: solid 1px black;
+          display: flex;
+          padding: 7px;
+          border-radius: 6px;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <img
+          style="height: 20px; width: 20px; object-fit: contain"
+          src="\assets\images\google.png"
+          alt=""
+        />
+        <span style="font-weight: 500; font-size: 15px"
+          >Sign up with Google</span
+        >
+      </div>
+
+      <div
+        style="
+          padding-top: 10px;
+          color: rgb(130, 95, 211);
+          display: flex;
+          gap: 5px;
+          font-size: small;
+          justify-content: center;
+        "
+      >
+        <span>Already have an account?</span>
+        <span style="text-decoration: underline; cursor: pointer">Log in</span>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <app-footer></app-footer>
+  </div>
+</div>

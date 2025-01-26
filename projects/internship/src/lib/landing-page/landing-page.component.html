@@ -1,0 +1,31 @@
+<app-header
+  (navButtonClickedEvent)="scrollTo($event)"
+  [actionButtonDescription]="'Sign up'"
+  (actionButtonClicked)="onNavigateToSignUp()"
+></app-header>
+
+<div
+  style="overflow-y: scroll; height: calc(100vh - 120px); scrollbar-width: thin"
+>
+  <div id="Home">
+    <home></home>
+  </div>
+
+  <div id="About">
+    <about></about>
+  </div>
+
+  <div id="Services">
+    <services></services>
+  </div>
+  <div id="Works">
+    <works></works>
+  </div>
+  <pricing></pricing>
+  <div id="Blog">
+    <blog></blog>
+  </div>
+  <div id="Contact">
+    <contact></contact>
+  </div>
+</div>

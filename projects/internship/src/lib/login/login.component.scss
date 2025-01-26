@@ -1,0 +1,13 @@
+.google-logo {
+    background: linear-gradient(to bottom right,
+
+            red 35%,
+            blue 35%,
+            green 50%,
+            yellow 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    /* Adjust size as needed */
+}
